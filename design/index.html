@@ -4,40 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOCIAL MEDIA DASHBOARD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <h3>Social Media Dashboard</h3>
-   <p>Total Followers: 23,004</p>
-   <button>dark mode</button>
+
+    <div class="header">
+
+    </div>
+
+<div class="content">
+   <h3 class="heading">Social Media Dashboard</h3>
+   <p class="subHeading">Total Followers: 23,004</p>
+   <div class="switch">
+        <div class="casing">
+            <div class="slider"></div>
+        </div>
+   </div>
 
    <div class="row">
-    <div class="col">
-        <h6>@nathanf</h6>
-        <h1>1987</h1>
-        <p>Followers</p>
-        <h6>12 Today</h6>
+    <div class="col-sm">
+        <div class="card facebook">
+            <div class="card-body">
+                <h6 class="cardText"><img class="icon" src="../images/icon-facebook.svg" alt="facebook">@nathanf</h6>
+                <h1 class="num">1987</h1>
+                <p class="cardText lsp">FOLLOWERS</p>
+                <h6 class="green"><img class="icon" src="../images/icon-up.svg" alt="up">12 Today</h6>
+            </div>
+        </div>
     </div>
-    <div class="col">
-        <h6>@nathanf</h6>
-        <h1>1044</h1>
-        <p>Followers</p>
-        <h6>99 Today</h6>
+    <div class="col-sm">
+        <div class="card twitter">
+            <div class="card-body">
+                <h6 class="cardText"><img class="icon" src="../images/icon-twitter.svg" alt="twitter">@nathanf</h6>
+                <h1 class="num">1044</h1>
+                <p class="cardText lsp">FOLLOWERS</p>
+                <h6 class="green"><img class="icon" src="../images/icon-up.svg" alt="up">99 Today</h6>
+            </div>
+        </div>        
     </div>
-    <div class="col">
-        <h6>@realnathanf</h6>
-        <h1>11k</h1>
-        <p>Followers</p>
-        <h6>1099 Today</h6>
+    <div class="col-sm">
+        <div class="card noBorder">
+            <div class="card-img-top instagram"></div>
+            <div class="card-body">
+                <h6 class="cardText"><img class="icon" src="../images/icon-instagram.svg" alt="instagram">@realnathanf</h6>
+                <h1 class="num">11k</h1>
+                <p class="cardText lsp">FOLLOWERS</p>
+                <h6 class="green"><img class="icon" src="../images/icon-up.svg" alt="up">1099 Today</h6>
+            </div>
+        </div>
     </div>
-    <div class="col">
-        <h6> Nathan F.</h6>
-        <h1>8239</h1>
-        <p>Subscribers</p>
-        <h6>144 Today</h6>
+    <div class="col-sm">
+        <div class="card youtube">
+            <div class="card-body">
+                <h6 class="cardText"><img class="icon" src="../images/icon-youtube.svg" alt="youtube">Nathan F.</h6>
+                <h1 class="num">8239</h1>
+                <p class="cardText lsp">SUBCRIBERS</p>
+                <h6 class="red"><img class="icon" src="../images/icon-down.svg" alt="down">144 Today</h6>
+            </div>
+        </div>
     </div>
 
 
    </div>
-    
+</div>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
