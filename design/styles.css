@@ -1,5 +1,11 @@
+/* dark mode ends with d */
+
 body {
     font-family: 'Inter', sans-serif;
+}
+
+body.d {
+    background-color: hsl(230, 17%, 14%);
 }
 
 .icon {
@@ -17,6 +23,15 @@ body {
     border-bottom-right-radius: 25px;
 }
 
+.header-d {
+    background-color: hsl(232, 19%, 15%);
+    height: 250px;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
 .content {
     position: absolute;
     top: 60px;
@@ -24,45 +39,142 @@ body {
     right:0;
     margin-left:auto;
     margin-right:auto;    
-    width: 900px;  
+    width: 65%;  
 }
 
 /* heading */
 
 .heading {
     font-weight: 700;
+    margin-bottom: 0;
+    color: hsl(230, 17%, 14%);
+}
+
+.heading-d {
+    font-weight: 700;
+    margin-bottom: 0;
+    color: hsl(0, 0%, 100%);
 }
 
 .subHeading {
     font-weight: 700;
     font-size: 14px;
+    color: hsl(228, 12%, 44%);
+    margin-bottom: 40px;
+}
+
+.subHeading-d {
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(228, 34%, 66%);
+    margin-bottom: 40px;
+}
+
+.darkMode {
+    position: absolute;
+    top: 10px;
+    right: 45px;
 }
 
 /* switch */
 
-.casing {
-    position: relative;
-    width: 40px;    
-    background-color: hsl(230, 22%, 74%);
-    border-radius: 20px;
-    padding: 3px;
-    cursor: pointer;
-}
-
-.slider {   
-    border-radius: 100%;
-    background-color: white;
-    height: 20px;
-    width: 20px;
-    left: 0;
-}
-
 .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(230, 22%, 74%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+  
+ 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.casing {
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 10px;
     z-index: +1;
 }
+
+@media only screen and (max-width: 786px) {
+
+    .casing {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        z-index: +1;
+    }
+
+    .darkMode {
+        position: absolute;
+        top: 50px;
+        right: 45px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .casing {
+        position: absolute;
+        left: 0;
+        top: 90px;
+        z-index: +1;
+    }
+
+    .darkMode {
+        position: absolute;
+        top: 90px;
+        left: 45px;
+    }
+  
+  }
 
 /* cards */
  
@@ -72,13 +184,27 @@ div.card {
     cursor: pointer;
 }
 
+div.card.d {
+    background-color: hsl(228, 28%, 20%);
+    text-align: center;
+    cursor: pointer;
+}
+
 div.card:hover {
     background-color: hsl(226, 23%, 89%);
 }
 
+div.card.d:hover {
+    background-color: hsl(229, 20%, 27%);
+}
+
 div.card-body h1 {
     color: hsl(230, 17%, 14%);
-} 
+}
+
+div.d h1 {
+    color: hsl(0, 0%, 100%);
+}
 
 .num {
     font-weight: 700;
@@ -97,6 +223,10 @@ div.card-body h1 {
     color: hsl(228, 12%, 44%);
 }
 
+.cardText-d {
+    color: hsl(228, 34%, 66%);
+}
+
 .green {
     color: hsl(163, 72%, 41%);
 }
@@ -108,27 +238,71 @@ div.card-body h1 {
 .facebook {
     border-width: 3px 0 0 0;
     border-top-color: hsl(195, 100%, 50%) ;
+    margin-bottom: 50px;
 }
 
 .twitter {
     border-width: 3px 0 0 0;
     border-top-color: hsl(203, 89%, 53%) ;
+    margin-bottom: 50px;
 }
 
 .instagram {
    height: 3.5px;
    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-
 }
 
 .noBorder{
     border-width: 0;
+    margin-bottom: 50px;
 }
 
 .youtube {
     border-width: 3px 0 0 0;
     border-top-color: hsl(348, 97%, 39%) ;
+    margin-bottom: 50px;
 }
+
+/* overview-cards */
+
+div.overview {
+    text-align: left;
+    position: relative;
+    margin-top: 20px;
+    border: 0;
+}
+div.overview.d {
+    text-align: left;
+    position: relative;
+    margin-top: 20px;
+    border: 0;
+}
+
+.icon-1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.icon-2 {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin-bottom: 0;
+}
+
+/* footer */
+
+.attribution {
+    margin: 50px auto 20px auto;
+}
+
+.attribution.d {
+    margin: 50px auto 20px auto;
+    color: hsl(0, 0%, 100%);
+}
+
+
 
 
 

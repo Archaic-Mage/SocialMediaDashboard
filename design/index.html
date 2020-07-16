@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOCIAL MEDIA DASHBOARD</title>
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -17,14 +18,16 @@
 <div class="content">
    <h3 class="heading">Social Media Dashboard</h3>
    <p class="subHeading">Total Followers: 23,004</p>
-   <div class="switch">
-        <div class="casing">
-            <div class="slider"></div>
-        </div>
+   <p class="subHeading darkMode">Dark mode</p>
+   <div class="casing">
+        <label class="switch">
+            <input type="checkbox" id="check">
+            <span class="slider round"></span>
+        </label>
    </div>
 
    <div class="row">
-    <div class="col-sm">
+    <div class="col-lg-3 col-md-6">
         <div class="card facebook">
             <div class="card-body">
                 <h6 class="cardText"><img class="icon" src="../images/icon-facebook.svg" alt="facebook">@nathanf</h6>
@@ -34,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm">
+    <div class="col-lg-3 col-md-6">
         <div class="card twitter">
             <div class="card-body">
                 <h6 class="cardText"><img class="icon" src="../images/icon-twitter.svg" alt="twitter">@nathanf</h6>
@@ -44,7 +47,7 @@
             </div>
         </div>        
     </div>
-    <div class="col-sm">
+    <div class="col-lg-3 col-md-6">
         <div class="card noBorder">
             <div class="card-img-top instagram"></div>
             <div class="card-body">
@@ -55,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm">
+    <div class="col-lg-3 col-md-6">
         <div class="card youtube">
             <div class="card-body">
                 <h6 class="cardText"><img class="icon" src="../images/icon-youtube.svg" alt="youtube">Nathan F.</h6>
@@ -65,11 +68,106 @@
             </div>
         </div>
     </div>
+   </div>
+   <h3 class="cardText">Overview - Today</h3>
+   <div class="row">
+       <div class="col-lg-3 col-md-6">
+           <div class="card overview">
+               <div class="card-body">
+                   <p class="subHeading">Page Views</p>
+                   <img class="icon-1" src="../images/icon-facebook.svg" alt="facebook">
+                   <h3 class="heading">87</h3>
+                   <p class="green icon-2"><img src="../images/icon-up.svg" alt="up">3%</p>
+               </div>
+           </div>
+       </div>
 
+       <div class="col-lg-3 col-md-6">
+        <div class="card overview">
+            <div class="card-body">
+                <p class="subHeading">Likes</p>
+                <img class="icon-1" src="../images/icon-facebook.svg" alt="facebook">
+                <h3 class="heading">52</h3>
+                <p class="red icon-2"><img src="../images/icon-down.svg" alt="up">2%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card overview">
+            <div class="card-body">
+                <p class="subHeading">Likes</p>
+                <img class="icon-1" src="../images/icon-instagram.svg" alt="facebook">
+                <h3 class="heading">5462</h3>
+                <p class="green icon-2"><imgsrc="../images/icon-up.svg" alt="up">2257%</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-6">
+        <div class="card overview">
+            <div class="card-body">
+                <p class="subHeading">Profile Views</p>
+                <img class="icon-1" src="../images/icon-instagram.svg" alt="facebook">
+                <h3 class="heading">52k</h3>
+                <p class="green icon-2"><img src="../images/icon-up.svg" alt="up">1375%</p>
+            </div>
+        </div>
+    </div>
 
    </div>
-</div>
+   <div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="card overview">
+            <div class="card-body">
+                <p class="subHeading">Retweets</p>
+                <img class="icon-1" src="../images/icon-twitter.svg" alt="facebook">
+                <h3 class="heading">117</h3>
+                <p class="green icon-2"><img src="../images/icon-up.svg" alt="up">303%</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="col-lg-3 col-md-6">
+     <div class="card overview">
+         <div class="card-body">
+             <p class="subHeading">Likes</p>
+             <img class="icon-1" src="../images/icon-twitter.svg" alt="facebook">
+             <h3 class="heading">507</h3>
+             <p class="green icon-2"><img src="../images/icon-up.svg" alt="up">553%</p>
+         </div>
+     </div>
+ </div>
+
+ <div class="col-lg-3 col-md-6">
+     <div class="card overview">
+         <div class="card-body">
+             <p class="subHeading">Likes</p>
+             <img class="icon-1" src="../images/icon-youtube.svg" alt="facebook">
+             <h3 class="heading">107</h3>
+             <p class="red icon-2"><img src="../images/icon-down.svg" alt="up">19%</p>
+         </div>
+     </div>
+ </div>
+
+ 
+ <div class="col-lg-3 col-md-6">
+     <div class="card overview">
+         <div class="card-body">
+             <p class="subHeading">Total Views</p>
+             <img class="icon-1" src="../images/icon-youtube.svg" alt="facebook">
+             <h3 class="heading">1407</h3>
+             <p class="red icon-2"><img src="../images/icon-down.svg" alt="up">12%</p>
+         </div>
+     </div>
+   </div>
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Soham Tripathy</a>.
+  </div>
+</div>
+   <script src="index.js"></script>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
